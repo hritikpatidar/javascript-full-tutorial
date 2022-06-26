@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web leyout pure js</title>
+    <style>
+
+    </style>
+    <script>
+
+    </script>
+
+</head>
+<body id="r-body">
+    
+    <script>
+        //1. create header element using js
+        var a = document.createElement('header'); 
+        a.innerHTML = "header";
+        console.log(a);
+        //2. now tell the js to place this header element inside body tage
+        document.getElementById('r-body').appendChild(a);
+        //create class inside header tag
+        document.querySelector('header').setAttribute('class','r-header');
+        //using css using pure js
+        document.body.style.margin = '0px';
+        
+        var x = document.getElementsByClassName('r-header');
+        x[0].style.width = '100%';
+        x[0].style.height = '150px';
+        x[0].style.border = '5px solid black';
+        x[0].style.color = 'green';
+
+
+        var x =document.getElementsByTagName('header');
+        //console.log(x[0]);
+        x[0].style.fontSize = '2em';
+        x[0].style.textAlign = 'center';
+        x[0].style.lineHeight = '150px';
+        
+
+                            //navigation
+        //1. create a footer element using js
+        let n = document.createElement('nav');
+       
+        //2. now tell the js to place this header element inside body tage
+        document.body.appendChild(n);
+
+        var aside1 = document.createElement('aside');
+        aside1.innerHTML='aside 1';
+
+        var section = document.createElement('section');
+        section.innerHTML='section';
+
+        var aside2 = document.createElement('aside');
+        aside2.innerHTML='aside 2';
+
+
+        document.body.appendChild(aside1);
+        document.body.appendChild(section);
+        document.body.appendChild(aside2);
+        
+        var arr = document.querySelectorAll('aside');
+        console.log(arr);
+        arr.forEach(function(currentValue, index, arr){
+            arr[index].style.display='inline-block';
+        });
+        document.querySelector('section').style.display='inline-block';
+
+        
+                                //footer
+        //1. create a footer element using js
+        let f = document.createElement('footer');
+        f.innerHTML='footer'
+        //2. now tell the js to place this header element inside body tage
+        document.body.appendChild(f);
+
+        /*
+            element.setAttribute('attributeName','attributeValue');
+        */
+        var x = document.querySelectorAll('footer');
+
+        x[0].setAttribute('data-foot','r-footer');
+        document.querySelector('footer[data-foot]').style.textAlign = 'center';
+        document.querySelector('[data-foot]').style.lineHeight = '150px';
+        document.querySelector('[data-foot="r-footer"]').style.lineHeight = '150px';
+        document.querySelector('[data-foot="r-footer"]').style.color = 'green';
+
+        let f1 =document.querySelector('footer');
+        f1.style.width = '100%';
+        f1.style.height = '150px';
+        f1.style.border = '5px solid black';
+        f1.style.fontSize = '2em';
+      
+
+        //create class inside header tag
+        /*document.querySelector('footer').setAttribute('class','r-footer');
+        var ff = document.getElementsByClassName('r-footer');
+        ff[0].style.width = '100%';
+        ff[0].style.height = '150px';
+        ff[0].style.border = '5px solid black';
+        ff[0].style.color = 'green';
+
+        var x =document.getElementsByTagName('footer');
+        //console.log(x[0]);
+        x[0].style.fontSize = '2em';
+        x[0].style.textAlign = 'center';
+        x[0].style.lineHeight = '150px';
+        */
+        
+        //console.log(ff[0]);
+    </script>
+</body>
+</html>

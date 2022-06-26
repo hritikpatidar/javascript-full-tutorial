@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>form crate</title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Personal information</legend>
+                <div>
+                    <label for="fn" >first name: </label>
+                    <input id="fn" type="text" name="fn" required>
+                </div>
+                <div>
+                    <label for="ln" >last name: </label>
+                    <input id="ln" type="text" name="ln" required>
+                </div>
+                <div>
+                    <label  >Gender:</label>
+                    <div>
+                        <label for="male">Male</label>
+                        <input id="male" type="radio" name="gender" value="male" checked>
+                    </div>
+                    <div>
+                        <label for="female">female</label>
+                        <input id="female" type="radio" name="gender" value="femlale">
+                    </div>
+                    <div>
+                        <label for="date">Date of birth:</label>
+                        <input id="date" type="date" name="dob" required>
+                    </div>
+                    <div>
+                        <label for="bio">bio</label>
+                        <textarea id="bio"  rows="10" name="bio" cols="70"> </textarea>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Education information
+                </legend>
+                <div>
+                    <label for="schooling">Schooling:</label>
+                    <input id="schooling" type="text" name="schooling">
+                </div>
+                <div>
+                    <label for="univ">University</label>
+                    <select name="university" id="univ" required>
+                        <option value="git">Gyanodaya Institute of Technolog</option>
+                        <option value="bbm"selected>balkavi bairagi mahavidhyalaya</option>
+                        <option value="vu" >Vikram University</option>
+                    </select>
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <legend>Hobbies</legend>
+                <div>
+                    <label>reading</label>
+                    <input type="checkbox" name="hobbie" value="reading">
+                </div>
+                <div>
+                    <label>coding</label>
+                    <input type="checkbox" name="hobbie" value="coding" checked>
+                </div>
+                <div>
+                    <label>dancing</label>
+                    <input type="checkbox" name="hobbie" value="dancing">
+                </div>
+                <div>
+                    <label>music</label>
+                    <input type="checkbox" name="hobbie" value="music" checked>
+                </div>
+            </fieldset>
+            <input type="submit" name="submit" value="SUBMIT">
+            <input type="reset" value="RESET"> 
+        </form>
+    </body>
+</html>

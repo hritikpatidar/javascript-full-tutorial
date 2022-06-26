@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fome designe</title>
+</head>
+<body>
+    <form>
+        <h1>HTML Form</h1>
+        <div>
+            <label for="emailtype">Email :</label>
+            <input type="email" id="emailtype" name="email" placeholder="Enter Yout Email"  required>
+        </div>
+        <br>
+        <div>
+            <label for="passwordtype">Password: </label>
+            <input type="password"  id="passwordtype" name="password" placeholder="Enter Yout Password" required>    
+        </div>
+        <br>
+        <input type="submit" value="SUBMIT">
+        <!-- <button>submit</button> -->
+    </form>
+    <hr>
+    <form>
+        <h1>HTML form</h1>
+        <div>
+            <label for="firstnameid">First name:</label>
+            <input type="text" id="firstnameid" name="firstname " required>
+        </div>
+        <br>
+        <div>
+            <label for="lastnameid">Last name:</label>
+            <input type="text" id="lastnameid" name="lastname" required>
+        </div>
+        <br>
+        <div>
+            <label for="emailtype1">Email :</label>
+            <input type="email" id="emailtype1" name="email" required>
+        </div>
+        <br>
+        <input type="radio" id="select" name="gender" >
+        <label for="select">Male</label>
+         <br>
+        <input type="radio" id="selectfemale" name="gender">
+        <label for="selectfemale">Female</label>
+        <br>
+        <br>
+        <input type="submit" value="SUBMIT">
+        <input type="reset" value="RESET">
+    </form>
+    <hr>
+    <form>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th> Name</th>
+                    <th> Value</th>
+                </tr>
+               
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="namefocus">Name</label>
+                    </td>
+                    <td>
+                        <input id="namefocus" type="text" name="name" required>
+                        <!-- <div>
+                            <label>NAME</label>
+                            <input type="text" name="name">
+                        </div> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Sex</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="male" name="gender">
+                        <label for="male">Male</label>
+                        <br>
+                        <input type="radio" id="female" name="gender">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="eyecolorfocuse">Eye color</label>
+                    </td>
+                    <td>
+                        <select id="eyecolorfocuse">
+                            <option>green</option>
+                            <option>red</option>
+                            <option>pink</option>
+                            <option>black</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Check all the apply</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="Over 6 feet tall">
+                        <label>Over 6 feet tall</label>
+                        <br>
+                        <input type="checkbox" name="Over 200 pounds">
+                        <label>Over 200 pounds</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td   colspan="2" > 
+                        <label for="textarea"> Describe your athletic ability:</label> <br>
+                        <textarea rows="5" cols="40" id="textarea" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button> Enter my information</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <hr>
+    <form>
+        <h1>Novell Services Login</h1>
+        <table>
+            <thead>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <lable for="username1">Username :</lable>
+                        <input id="username1" type="text" name="username">
+                    </td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
